@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}Agenda de Contatos - Início{% endblock %}
+
+{% block content %}
+<div class="row align-items-center">
+    <div class="col-md-6">
+        <h1 class="display-4">Bem-vindo à sua Agenda de Contatos</h1>
+        <p class="lead">Mantenha seus contatos organizados e facilmente acessíveis.</p>
+        <hr class="my-4">
+        <p>Um aplicativo simples e eficiente para gerenciar seus contatos pessoais e profissionais.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="{{ url_for('contatos.listar_contatos') }}" class="btn btn-primary btn-lg me-md-2">
+                Ver Contatos
+            </a>
+            <a href="{{ url_for('contatos.criar_contato') }}" class="btn btn-success btn-lg">
+                Novo Contato
+            </a>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <img src="{{ url_for('static', filename='img/contacts.svg') }}" alt="Ilustração de Agenda de Contatos" class="img-fluid" onerror="this.src='https://via.placeholder.com/500x400?text=Agenda+de+Contatos'; this.onerror=null;">
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">Gerenciamento</h5>
+                <p class="card-text">Adicione, edite e remova contatos facilmente.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">Categorização</h5>
+                <p class="card-text">Organize seus contatos em categorias personalizadas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body text-center">
+                <h5 class="card-title">Busca</h5>
+                <p class="card-text">Encontre rapidamente o que procura por nome ou categoria.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

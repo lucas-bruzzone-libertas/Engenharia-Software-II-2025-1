@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}Agenda de Contatos - Nova Categoria{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Nova Categoria</h4>
+            </div>
+            <div class="card-body">
+                <form action="{{ url_for('categorias.criar_categoria') }}" method="post" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome*</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe o nome da categoria.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="descricao" class="form-label">Descrição</label>
+                        <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+                        <div class="form-text">Opcional</div>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{{ url_for('categorias.listar_categorias') }}" class="btn btn-secondary me-md-2">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Adicional ao script global para este formulário específico
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            
+            form.classList.add('was-validated');
+        });
+    });
+</script>
+{% endblock %}

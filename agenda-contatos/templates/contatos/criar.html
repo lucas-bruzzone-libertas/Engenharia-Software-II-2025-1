@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block title %}Agenda de Contatos - Novo Contato{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Novo Contato</h4>
+            </div>
+            <div class="card-body">
+                <form action="{{ url_for('contatos.criar_contato') }}" method="post" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome*</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe o nome do contato.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone*</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe o telefone do contato.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@email.com">
+                        <div class="form-text">Opcional</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="categoria_id" class="form-label">Categoria</label>
+                        <select class="form-select" id="categoria_id" name="categoria_id">
+                            <option value="">Sem categoria</option>
+                            {% for categoria in categorias %}
+                            <option value="{{ categoria.id }}">{{ categoria.nome }}</option>
+                            {% endfor %}
+                        </select>
+                        <div class="form-text">Opcional</div>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{{ url_for('contatos.listar_contatos') }}" class="btn btn-secondary me-md-2">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Adicional ao script global para este formulário específico
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            
+            form.classList.add('was-validated');
+        });
+    });
+</script>
+{% endblock %}{% extends 'base.html' %}
+
+{% block title %}Agenda de Contatos - Novo Contato{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Novo Contato</h4>
+            </div>
+            <div class="card-body">
+                <form action="{{ url_for('contatos.criar_contato') }}" method="post" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome*</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe o nome do contato.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone*</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe o telefone do contato.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="exemplo@email.com">
+                        <div class="form-text">Opcional</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="categoria_id" class="form-label">Categoria</label>
+                        <select class="form-select" id="categoria_id" name="categoria_id">
+                            <option value="">Sem categoria</option>
+                            {% for categoria in categorias %}
+                            <option value="{{ categoria.id }}">{{ categoria.nome }}</option>
+                            {% endfor %}
+                        </select>
+                        <div class="form-text">Opcional</div>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <a href="{{ url_for('contatos.listar_contatos') }}" class="btn btn-secondary me-md-2">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Adicional ao script global para este formulário específico
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            
+            form.classList.add('was-validated');
+        });
+    });
+</script>
+{% endblock %}

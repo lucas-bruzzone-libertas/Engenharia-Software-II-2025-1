@@ -1,0 +1,89 @@
+/* Estilos personalizados para a Agenda de Contatos */
+
+/* Estilo geral */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+/* Cabeçalhos */
+h1, h2, h3, h4, h5, h6 {
+    color: #1a73e8;
+}
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
+}
+
+.btn-primary:hover {
+    background-color: #0d62d1;
+    border-color: #0d62d1;
+}
+
+/* Tabelas */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Form inputs */
+.form-control:focus, .form-select:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 0.25rem rgba(26, 115, 232, 0.25);
+}
+
+/* Alertas */
+.alert {
+    border-radius: 8px;
+}
+
+/* Cores para categorias (você pode adicionar mais conforme necessário) */
+.category-personal {
+    background-color: #e6f4ea;
+}
+
+.category-work {
+    background-color: #e8f0fe;
+}
+
+.category-family {
+    background-color: #fce8e6;
+}
+
+.category-friends {
+    background-color: #fff8e1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn {
+        padding: 0.375rem 0.75rem;
+    }
+}
