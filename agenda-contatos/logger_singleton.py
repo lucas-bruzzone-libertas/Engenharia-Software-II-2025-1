@@ -1,9 +1,13 @@
 import datetime
+import os
+import logging
+from logging.handlers import RotatingFileHandler
 
 class Logger:
     """
     Implementação do Logger utilizando o padrão Singleton.
     Garante que exista apenas uma instância do Logger em toda a aplicação.
+    Salva logs em arquivo local com rotação automática.
     """
     # Variável de classe para armazenar a instância única
     _instance = None
@@ -35,10 +39,37 @@ class Logger:
                 "WARNING": "WARNING",
                 "ERROR": "ERROR"
             }
+            
+            # Cria o diretório de logs se não existir
+            self.log_dir = 'logs'
+            if not os.path.exists(self.log_dir):
+                os.makedirs(self.log_dir)
+            
+            # Configura o logger do Python
+            self.logger = logging.getLogger('agenda_contatos')
+            self.logger.setLevel(logging.INFO)
+            
+            # Formata as mensagens de log
+            formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s')
+            
+            # Handler para console
+            console_handler = logging.StreamHandler()
+            console_handler.setFormatter(formatter)
+            self.logger.addHandler(console_handler)
+            
+            # Handler para arquivo com rotação
+            # Limita o tamanho de cada arquivo a 1MB e mantém até 10 arquivos de backup
+            file_handler = RotatingFileHandler(
+                os.path.join(self.log_dir, 'application.log'),
+                maxBytes=1024 * 1024,  # 1MB
+                backupCount=10
+            )
+            file_handler.setFormatter(formatter)
+            self.logger.addHandler(file_handler)
     
     def log(self, message, level="INFO"):
         """
-        Registra uma mensagem com o nível especificado e timestamp.
+        Registra uma mensagem com o nível especificado.
         
         Args:
             message (str): A mensagem a ser registrada
@@ -46,8 +77,17 @@ class Logger:
         """
         timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         log_entry = f"[{timestamp}] [{level}] {message}"
-        print(log_entry)  # Exibe no console
+        
+        # Adiciona à lista interna de logs
         self.logs.append(log_entry)
+        
+        # Registra usando o logger do Python
+        if level == "INFO":
+            self.logger.info(message)
+        elif level == "WARNING":
+            self.logger.warning(message)
+        elif level == "ERROR":
+            self.logger.error(message)
         
     def info(self, message):
         """Registra uma mensagem com nível INFO."""
@@ -61,13 +101,17 @@ class Logger:
         """Registra uma mensagem com nível ERROR."""
         self.log(message, self.log_levels["ERROR"])
     
-    def save_to_file(self, filename="application.log"):
+    def save_to_file(self, filename=None):
         """
-        Salva todos os logs registrados em um arquivo.
+        Força o salvamento de todos os logs registrados em um arquivo específico.
         
         Args:
-            filename (str): Nome do arquivo onde os logs serão salvos
+            filename (str, optional): Nome do arquivo onde os logs serão salvos.
+                                      Se None, usa 'logs/manual_backup.log'.
         """
+        if filename is None:
+            filename = os.path.join(self.log_dir, 'manual_backup.log')
+            
         try:
             with open(filename, "w") as file:
                 for log_entry in self.logs:
@@ -78,8 +122,13 @@ class Logger:
             return False
     
     def get_logs(self):
-        """Retorna todos os logs registrados."""
+        """Retorna todos os logs registrados na sessão atual."""
         return self.logs
+    
+    def clear_memory_logs(self):
+        """Limpa os logs armazenados em memória (lista interna)."""
+        self.logs = []
+        return True
 
 
 # Exemplo de uso do Logger
@@ -107,9 +156,9 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Erro capturado: {e}")
     
-    # Salvando logs em arquivo
-    logger.save_to_file()
-    print("\nLogs salvos em 'application.log'")
+    # Forçando o salvamento manual em um arquivo específico
+    logger.save_to_file('logs/teste_manual.log')
+    print("\nBackup manual de logs gerado em 'logs/teste_manual.log'")
     
     # Listando todos os logs registrados
     print("\nTodos os logs registrados:")

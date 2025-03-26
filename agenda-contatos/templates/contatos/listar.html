@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block title %}Agenda de Contatos - {{ titulo }}{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>{{ titulo }}</h1>
+    <div>
+        <a href="{{ url_for('contatos.criar_contato') }}" class="btn btn-success">
+            <i class="bi bi-plus-circle"></i> Novo Contato
+        </a>
+    </div>
+</div>
+
+<!-- Filtros de busca -->
+<div class="card mb-4">
+    <div class="card-header bg-light">
+        <h5 class="mb-0">Filtros</h5>
+    </div>
+    <div class="card-body">
+        <form action="{{ url_for('contatos.listar_contatos') }}" method="get" class="row g-3">
+            <div class="col-md-5">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" value="{{ nome_busca or '' }}">
+            </div>
+            <div class="col-md-5">
+                <label for="categoria_id" class="form-label">Categoria</label>
+                <select class="form-select" id="categoria_id" name="categoria_id">
+                    <option value="">Todas as categorias</option>
+                    {% for categoria in categorias %}
+                    <option value="{{ categoria.id }}" {% if categoria_id_busca and categoria_id_busca|int == categoria.id %}selected{% endif %}>
+                        {{ categoria.nome }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-2 d-flex align-items-end">
+                <button type="submit" class="btn btn-primary w-100">Filtrar</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% if contatos %}
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Categoria</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for contato in contatos %}
+                <tr>
+                    <td>{{ contato.nome }}</td>
+                    <td>{{ contato.telefone }}</td>
+                    <td>{{ contato.email or '-' }}</td>
+                    <td>
+                        {% if contato.categoria_id %}
+                            {% for categoria in categorias %}
+                                {% if categoria.id == contato.categoria_id %}
+                                    {{ categoria.nome }}
+                                {% endif %}
+                            {% endfor %}
+                        {% else %}
+                            <span class="text-muted">Sem categoria</span>
+                        {% endif %}
+                    </td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a href="{{ url_for('contatos.editar_contato', id=contato.id) }}" class="btn btn-sm btn-primary">
+                                Editar
+                            </a>
+                            <!-- Botão de exclusão que aciona modal -->
+                            <button type="button" class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{ contato.id }}">
+                                Excluir
+                            </button>
+                        </div>
+                        
+                        <!-- Modal de confirmação de exclusão -->
+                        <div class="modal fade" id="deleteModal{{ contato.id }}" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Confirmar Exclusão</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Tem certeza que deseja excluir o contato <strong>{{ contato.nome }}</strong>?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                        <form action="{{ url_for('contatos.excluir_contato', id=contato.id) }}" method="post">
+                                            <button type="submit" class="btn btn-danger">Excluir</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    <div class="alert alert-info">
+        Nenhum contato encontrado.
+        {% if nome_busca or categoria_id_busca %}
+            <a href="{{ url_for('contatos.listar_contatos') }}" class="alert-link">Limpar filtros</a>
+        {% endif %}
+    </div>
+{% endif %}
+
+{% if not nome_busca and not categoria_id_busca %}
+    <div class="card mt-4">
+        <div class="card-header bg-light">
+            <h5 class="mb-0">Dicas</h5>
+        </div>
+        <div class="card-body">
+            <p>Use os filtros acima para encontrar contatos específicos.</p>
+            <p>Você pode organizar seus contatos criando <a href="{{ url_for('categorias.listar_categorias') }}">categorias</a>.</p>
+        </div>
+    </div>
+{% endif %}
+{% endblock %}
