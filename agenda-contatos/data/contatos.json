@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "id": 1,
+        "nome": "Lucas Ricardo Duarte Bruzzone",
+        "telefone": "(35) 98800-6634",
+        "email": "lucas.bruzzone@ectare.com.br",
+        "categoria_id": 1
+    }
+]

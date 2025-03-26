@@ -1,5 +1,69 @@
-[2025-03-26 09:52:42,829] [INFO] Aplicação Agenda de Contatos iniciada
-[2025-03-26 09:52:43,210] [INFO] Aplicação Agenda de Contatos iniciada
-[2025-03-26 09:52:50,998] [INFO] Página inicial acessada
-[2025-03-26 09:52:51,058] [WARNING] Página não encontrada: /static/img/contacts.svg
-[2025-03-26 09:53:38,467] [INFO] Página inicial acessada
+[2025-03-26 10:00:18,745] [INFO] Aplicaï¿½ï¿½o Agenda de Contatos iniciada
+[2025-03-26 10:00:19,218] [INFO] Aplicaï¿½ï¿½o Agenda de Contatos iniciada
+[2025-03-26 10:00:25,500] [INFO] Pï¿½gina inicial acessada
+[2025-03-26 10:00:49,018] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:00:49,021] [INFO] Listando todos os contatos
+[2025-03-26 10:00:49,023] [INFO] Listando todas as categorias
+[2025-03-26 10:00:54,441] [INFO] Listando todas as categorias
+[2025-03-26 10:01:02,512] [INFO] Criando novo contato: Lucas Ricardo Duarte Bruzzone
+[2025-03-26 10:01:02,513] [INFO] Contato criado: Lucas Ricardo Duarte Bruzzone (ID: 1)
+[2025-03-26 10:01:02,574] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:02,576] [INFO] Listando todos os contatos
+[2025-03-26 10:01:02,587] [INFO] Listando todas as categorias
+[2025-03-26 10:01:08,191] [INFO] Acessando pï¿½gina de listagem de categorias
+[2025-03-26 10:01:08,191] [INFO] Listando todas as categorias
+[2025-03-26 10:01:18,613] [INFO] Criando nova categoria: Front End Specialist
+[2025-03-26 10:01:18,614] [INFO] Categoria criada: Front End Specialist (ID: 1)
+[2025-03-26 10:01:18,662] [INFO] Acessando pï¿½gina de listagem de categorias
+[2025-03-26 10:01:18,663] [INFO] Listando todas as categorias
+[2025-03-26 10:01:20,720] [INFO] Buscando categoria por ID: 1
+[2025-03-26 10:01:27,656] [INFO] Buscando categoria por ID: 1
+[2025-03-26 10:01:27,658] [INFO] Atualizando categoria: ID 1
+[2025-03-26 10:01:27,659] [INFO] Categoria atualizada: Front End Specialist (ID: 1)
+[2025-03-26 10:01:27,703] [INFO] Acessando pï¿½gina de listagem de categorias
+[2025-03-26 10:01:27,703] [INFO] Listando todas as categorias
+[2025-03-26 10:01:29,699] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:29,700] [INFO] Buscando contatos por categoria: ID 1
+[2025-03-26 10:01:29,701] [INFO] Buscando categoria por ID: 1
+[2025-03-26 10:01:29,702] [INFO] Listando todas as categorias
+[2025-03-26 10:01:36,700] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:36,701] [INFO] Listando todos os contatos
+[2025-03-26 10:01:36,702] [INFO] Listando todas as categorias
+[2025-03-26 10:01:38,386] [INFO] Buscando contato por ID: 1
+[2025-03-26 10:01:38,388] [INFO] Listando todas as categorias
+[2025-03-26 10:01:40,464] [INFO] Buscando contato por ID: 1
+[2025-03-26 10:01:40,467] [INFO] Atualizando contato: ID 1
+[2025-03-26 10:01:40,468] [INFO] Contato atualizado: Lucas Ricardo Duarte Bruzzone (ID: 1)
+[2025-03-26 10:01:40,514] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:40,515] [INFO] Listando todos os contatos
+[2025-03-26 10:01:40,516] [INFO] Listando todas as categorias
+[2025-03-26 10:01:43,339] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:43,340] [INFO] Buscando contatos por categoria: ID 1
+[2025-03-26 10:01:43,340] [INFO] Buscando categoria por ID: 1
+[2025-03-26 10:01:43,341] [INFO] Listando todas as categorias
+[2025-03-26 10:01:46,086] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:46,088] [INFO] Listando todos os contatos
+[2025-03-26 10:01:46,089] [INFO] Listando todas as categorias
+[2025-03-26 10:01:48,040] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:48,040] [INFO] Buscando contatos por nome: Rafael
+[2025-03-26 10:01:48,040] [INFO] Listando todas as categorias
+[2025-03-26 10:01:49,538] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:49,539] [INFO] Listando todos os contatos
+[2025-03-26 10:01:49,540] [INFO] Listando todas as categorias
+[2025-03-26 10:01:51,920] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:51,921] [INFO] Buscando contatos por categoria: ID 1
+[2025-03-26 10:01:51,922] [INFO] Buscando categoria por ID: 1
+[2025-03-26 10:01:51,923] [INFO] Listando todas as categorias
+[2025-03-26 10:01:53,536] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:53,537] [INFO] Buscando contatos por nome: Rafael
+[2025-03-26 10:01:53,538] [INFO] Listando todas as categorias
+[2025-03-26 10:01:56,996] [INFO] Acessando pï¿½gina de listagem de contatos
+[2025-03-26 10:01:56,997] [INFO] Listando todos os contatos
+[2025-03-26 10:01:56,998] [INFO] Listando todas as categorias
+[2025-03-26 10:01:58,598] [INFO] Acessando pï¿½gina de listagem de categorias
+[2025-03-26 10:01:58,599] [INFO] Listando todas as categorias
+[2025-03-26 10:01:59,426] [INFO] Pï¿½gina inicial acessada
+[2025-03-26 10:02:36,782] [INFO] Aplicação Agenda de Contatos iniciada
+[2025-03-26 10:02:37,136] [INFO] Aplicação Agenda de Contatos iniciada
+[2025-03-26 10:02:38,642] [INFO] Página inicial acessada
+[2025-03-26 10:03:29,389] [INFO] Listando todas as categorias
