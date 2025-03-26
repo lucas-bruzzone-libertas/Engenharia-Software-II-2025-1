@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, request
 from controllers.contato_controller import contato_bp
 from controllers.categoria_controller import categoria_bp
 from logger_singleton import Logger
