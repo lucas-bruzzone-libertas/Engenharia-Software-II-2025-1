@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 
-{% block title %}Agenda de Contatos - Nova Categoria{% endblock %}
+{% block title %}Agenda de Contatos - Editar Categoria{% endblock %}
 
 {% block content %}
 <div class="row">
     <div class="col-md-8 offset-md-2">
         <div class="card">
             <div class="card-header bg-primary text-white">
-                <h4 class="mb-0">Nova Categoria</h4>
+                <h4 class="mb-0">Editar Categoria</h4>
             </div>
             <div class="card-body">
-                <form action="{{ url_for('categorias.criar_categoria') }}" method="post" class="needs-validation" novalidate>
+                <form action="{{ url_for('categorias.editar_categoria', id=categoria.id) }}" method="post" class="needs-validation" novalidate>
                     <div class="mb-3">
                         <label for="nome" class="form-label">Nome*</label>
-                        <input type="text" class="form-control" id="nome" name="nome" required>
+                        <input type="text" class="form-control" id="nome" name="nome" value="{{ categoria.nome }}" required>
                         <div class="invalid-feedback">
                             Por favor, informe o nome da categoria.
                         </div>
@@ -21,7 +21,7 @@
                     
                     <div class="mb-3">
                         <label for="descricao" class="form-label">Descrição</label>
-                        <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+                        <textarea class="form-control" id="descricao" name="descricao" rows="3">{{ categoria.descricao }}</textarea>
                         <div class="form-text">Opcional</div>
                     </div>
                     
