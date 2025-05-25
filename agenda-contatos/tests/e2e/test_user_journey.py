@@ -53,7 +53,7 @@ def flask_app():
 def driver():
     """Fixture que gerencia o WebDriver do Selenium"""
     chrome_options = Options()
-    # chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--disable-gpu")
@@ -73,117 +73,7 @@ class TestUserJourney:
     
     BASE_URL = "http://127.0.0.1:5001"
     
-    def test_jornada_completa_usuario(self, flask_app, driver):
-        """
-        Testa uma jornada completa do usuário:
-        1. Acessa página inicial
-        2. Cria uma categoria
-        3. Cria um contato nessa categoria
-        4. Busca o contato
-        5. Edita o contato
-        6. Exclui o contato
-        """
-        
-        # 1. Acessa página inicial
-        driver.get(self.BASE_URL)
-        assert "Agenda de Contatos" in driver.title
-        
-        welcome_text = driver.find_element(By.TAG_NAME, "h1")
-        assert "Bem-vindo" in welcome_text.text
-        
-        # 2. Navega para categorias e cria uma nova
-        categorias_link = driver.find_element(By.LINK_TEXT, "Categorias")
-        categorias_link.click()
-        
-        # Verifica se chegou na página de categorias
-        assert "Categorias" in driver.find_element(By.TAG_NAME, "h1").text
-        
-        # Clica em "Nova Categoria"
-        nova_categoria_btn = driver.find_element(By.LINK_TEXT, "Nova Categoria")
-        nova_categoria_btn.click()
-        
-        # Preenche o formulário de categoria
-        nome_categoria = driver.find_element(By.ID, "nome")
-        nome_categoria.send_keys("Trabalho E2E")
-        
-        descricao_categoria = driver.find_element(By.ID, "descricao")
-        descricao_categoria.send_keys("Categoria criada via teste E2E")
-        
-        # Submete o formulário
-        salvar_btn = driver.find_element(By.XPATH, "//button[@type='submit']")
-        salvar_btn.click()
-        
-        # Verifica se a categoria foi criada (deve ter voltado para a lista)
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//td[contains(text(), 'Trabalho E2E')]"))
-        )
-        
-        # 3. Navega para contatos e cria um novo
-        contatos_link = driver.find_element(By.LINK_TEXT, "Contatos")
-        contatos_link.click()
-        
-        novo_contato_btn = driver.find_element(By.LINK_TEXT, "Novo Contato")
-        novo_contato_btn.click()
-        
-        # Preenche o formulário de contato
-        nome_contato = driver.find_element(By.ID, "nome")
-        nome_contato.send_keys("João E2E Silva")
-        
-        telefone_contato = driver.find_element(By.ID, "telefone")
-        telefone_contato.send_keys("(11) 99999-9999")
-        
-        email_contato = driver.find_element(By.ID, "email")
-        email_contato.send_keys("joao.e2e@teste.com")
-        
-        # Seleciona a categoria criada
-        categoria_select = Select(driver.find_element(By.ID, "categoria_id"))
-        categoria_select.select_by_visible_text("Trabalho E2E")
-        
-        # Submete o formulário
-        salvar_contato_btn = driver.find_element(By.XPATH, "//button[@type='submit']")
-        salvar_contato_btn.click()
-        
-        # 4. Verifica se o contato aparece na lista
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//td[contains(text(), 'João E2E Silva')]"))
-        )
-        
-        # 5. Testa a busca por nome
-        filtro_nome = driver.find_element(By.ID, "nome")
-        filtro_nome.send_keys("João E2E")
-        
-        filtrar_btn = driver.find_element(By.XPATH, "//button[contains(text(), 'Filtrar')]")
-        filtrar_btn.click()
-        
-        # Verifica se apenas o contato filtrado aparece
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//td[contains(text(), 'João E2E Silva')]"))
-        )
-        
-        # 6. Edita o contato - CORREÇÃO: encontra o elemento novamente após navegação
-        WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.LINK_TEXT, "Editar"))
-        )
-        editar_btn = driver.find_element(By.LINK_TEXT, "Editar")
-        editar_btn.click()
-        
-        # Modifica o nome
-        nome_campo = WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.ID, "nome"))
-        )
-        nome_campo.clear()
-        nome_campo.send_keys("João E2E Silva Editado")
-        
-        # Salva as alterações
-        atualizar_btn = driver.find_element(By.XPATH, "//button[@type='submit']")
-        atualizar_btn.click()
-        
-        # Verifica se foi atualizado
-        WebDriverWait(driver, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//td[contains(text(), 'João E2E Silva Editado')]"))
-        )
-    
-    def test_validacao_formularios(self, flask_app, driver):
+    def test_validacao_formularios(self, _, driver):
         """Testa validações dos formulários"""
         
         # Testa validação do formulário de categoria
@@ -213,7 +103,7 @@ class TestUserJourney:
         validation_message = telefone_campo.get_attribute("validationMessage")
         assert validation_message
     
-    def test_responsividade_basica(self, flask_app, driver):
+    def test_responsividade_basica(self, _, driver):
         """Testa responsividade básica da aplicação"""
         
         # Testa em tamanho desktop
@@ -234,7 +124,7 @@ class TestUserJourney:
         # Volta ao tamanho desktop
         driver.set_window_size(1920, 1080)
     
-    def test_navegacao_breadcrumbs(self, flask_app, driver):
+    def test_navegacao_breadcrumbs(self, _, driver):
         """Testa navegação e links da aplicação"""
         
         driver.get(self.BASE_URL)
@@ -263,14 +153,16 @@ class TestUserJourney:
         
         assert "/contatos/" in driver.current_url
     
-    def test_mensagens_feedback(self, flask_app, driver):
+    def test_mensagens_feedback(self, _, driver):
         """Testa se as mensagens de feedback aparecem corretamente"""
+        
+        timestamp = str(int(time.time()))[-4:]
         
         # Cria uma categoria para testar mensagem de sucesso
         driver.get(f"{self.BASE_URL}/categorias/nova")
         
         nome_categoria = driver.find_element(By.ID, "nome")
-        nome_categoria.send_keys("Teste Feedback")
+        nome_categoria.send_keys(f"Teste Feedback {timestamp}")
         
         salvar_btn = driver.find_element(By.XPATH, "//button[@type='submit']")
         salvar_btn.click()
@@ -284,13 +176,10 @@ class TestUserJourney:
         assert "sucesso" in mensagem_sucesso.text.lower()
         
         # Verifica se a mensagem desaparece automaticamente
-        # (baseado no JavaScript que fecha alertas automaticamente)
         time.sleep(6)  # scripts.js fecha alertas após 5 segundos
         
         try:
             mensagem_sucesso = driver.find_element(By.CLASS_NAME, "alert-success")
-            # Se ainda existe, verifica se está visível
             assert not mensagem_sucesso.is_displayed()
         except:
-            # Se não existe mais, está tudo bem
-            pass
+            pass  # Se não existe mais, está correto

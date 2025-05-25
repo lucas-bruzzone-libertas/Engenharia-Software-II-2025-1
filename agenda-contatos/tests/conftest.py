@@ -5,6 +5,19 @@ from app import app
 from logger_singleton import Logger
 from models.contato import Contato
 from models.categoria import Categoria
+import pytest
+
+def pytest_configure(config):
+    """Registra markers customizados"""
+    config.addinivalue_line(
+        "markers", "unit: Testes unitários"
+    )
+    config.addinivalue_line(
+        "markers", "integration: Testes de integração"
+    )
+    config.addinivalue_line(
+        "markers", "e2e: Testes end-to-end"
+    )
 
 @pytest.fixture
 def client():
