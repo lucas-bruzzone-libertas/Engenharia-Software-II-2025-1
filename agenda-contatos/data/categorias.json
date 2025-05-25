@@ -1,7 +1,197 @@
 [
     {
         "id": 1,
-        "nome": "Front End Specialist",
-        "descricao": "Legend"
+        "nome": "Trabalho E2E",
+        "descricao": "Categoria criada via teste E2E"
+    },
+    {
+        "id": 2,
+        "nome": "Teste Feedback",
+        "descricao": ""
+    },
+    {
+        "id": 3,
+        "nome": "Trabalho",
+        "descricao": "Contatos profissionais"
+    },
+    {
+        "id": 4,
+        "nome": "Família",
+        "descricao": "Contatos familiares"
+    },
+    {
+        "id": 5,
+        "nome": "Amigos Próximos",
+        "descricao": "Melhores amigos"
+    },
+    {
+        "id": 6,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 7,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 8,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 9,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 10,
+        "nome": "Trabalho Web",
+        "descricao": "Categoria criada via web"
+    },
+    {
+        "id": 11,
+        "nome": "Teste Fluxo",
+        "descricao": "Categoria para teste completo"
+    },
+    {
+        "id": 12,
+        "nome": "Teste Web",
+        "descricao": "Para testes web"
+    },
+    {
+        "id": 13,
+        "nome": "Teste Web",
+        "descricao": "Para testes web"
+    },
+    {
+        "id": 14,
+        "nome": "Trabalho E2E",
+        "descricao": "Categoria criada via teste E2E"
+    },
+    {
+        "id": 15,
+        "nome": "Teste Feedback",
+        "descricao": ""
+    },
+    {
+        "id": 16,
+        "nome": "Trabalho",
+        "descricao": "Contatos profissionais"
+    },
+    {
+        "id": 17,
+        "nome": "Família",
+        "descricao": "Contatos familiares"
+    },
+    {
+        "id": 18,
+        "nome": "Amigos Próximos",
+        "descricao": "Melhores amigos"
+    },
+    {
+        "id": 19,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 20,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 21,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 22,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 23,
+        "nome": "Trabalho Web",
+        "descricao": "Categoria criada via web"
+    },
+    {
+        "id": 24,
+        "nome": "Teste Fluxo",
+        "descricao": "Categoria para teste completo"
+    },
+    {
+        "id": 25,
+        "nome": "Teste Web",
+        "descricao": "Para testes web"
+    },
+    {
+        "id": 26,
+        "nome": "Teste Web",
+        "descricao": "Para testes web"
+    },
+    {
+        "id": 27,
+        "nome": "Trabalho E2E",
+        "descricao": "Categoria criada via teste E2E"
+    },
+    {
+        "id": 28,
+        "nome": "Teste Feedback",
+        "descricao": ""
+    },
+    {
+        "id": 29,
+        "nome": "Trabalho",
+        "descricao": "Contatos profissionais"
+    },
+    {
+        "id": 30,
+        "nome": "Família",
+        "descricao": "Contatos familiares"
+    },
+    {
+        "id": 31,
+        "nome": "Amigos Próximos",
+        "descricao": "Melhores amigos"
+    },
+    {
+        "id": 32,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 33,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 34,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 35,
+        "nome": "Teste",
+        "descricao": "Categoria de teste"
+    },
+    {
+        "id": 36,
+        "nome": "Trabalho Web",
+        "descricao": "Categoria criada via web"
+    },
+    {
+        "id": 37,
+        "nome": "Teste Fluxo",
+        "descricao": "Categoria para teste completo"
+    },
+    {
+        "id": 38,
+        "nome": "Teste Web",
+        "descricao": "Para testes web"
+    },
+    {
+        "id": 39,
+        "nome": "Teste Web",
+        "descricao": "Para testes web"
     }
 ]
