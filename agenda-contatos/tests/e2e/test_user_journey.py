@@ -72,7 +72,7 @@ class TestUserJourney:
     
     BASE_URL = "http://127.0.0.1:5001"
     
-    def test_validacao_formularios(self, _, driver):
+    def test_validacao_formularios(self, flask_app, driver):
         """Testa validações dos formulários"""
         
         # Testa validação do formulário de categoria
@@ -102,7 +102,7 @@ class TestUserJourney:
         validation_message = telefone_campo.get_attribute("validationMessage")
         assert validation_message
     
-    def test_responsividade_basica(self, _, driver):
+    def test_responsividade_basica(self, flask_app, driver):
         """Testa responsividade básica da aplicação"""
         
         # Testa em tamanho desktop
@@ -123,7 +123,7 @@ class TestUserJourney:
         # Volta ao tamanho desktop
         driver.set_window_size(1920, 1080)
     
-    def test_navegacao_breadcrumbs(self, _, driver):
+    def test_navegacao_breadcrumbs(self, flask_app, driver):
         """Testa navegação e links da aplicação"""
         
         driver.get(self.BASE_URL)
@@ -152,7 +152,7 @@ class TestUserJourney:
         
         assert "/contatos/" in driver.current_url
     
-    def test_mensagens_feedback(self, _, driver):
+    def test_mensagens_feedback(self, flask_app, driver):
         """Testa se as mensagens de feedback aparecem corretamente"""
         
         timestamp = str(int(time.time()))[-4:]
