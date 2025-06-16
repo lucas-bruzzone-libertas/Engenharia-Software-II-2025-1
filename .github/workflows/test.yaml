@@ -26,11 +26,7 @@ jobs:
     
     - name: Run tests with coverage (skip E2E in CI)
       run: |
-        if [ -d "tests" ]; then
-          pytest --cov --cov-branch --cov-report=xml --cov-report=html -k "not e2e"
-        else
-          echo "No tests directory found, skipping tests"
-        fi
+        pytest --cov --cov-branch --cov-report=xml --cov-report=html -k "not e2e"
     
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
