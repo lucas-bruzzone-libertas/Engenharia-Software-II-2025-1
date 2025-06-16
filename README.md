@@ -1,4 +1,5 @@
 # Agenda de Contatos
+[![codecov](https://codecov.io/gh/usuario/repo/branch/main/graph/badge.svg)](https://codecov.io/gh/usuario/repo)
 
 Uma aplicação web para gerenciamento de contatos pessoais e profissionais, desenvolvida com Flask seguindo o padrão MVC (Model-View-Controller).
 
