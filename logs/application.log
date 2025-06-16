@@ -1,265 +1,299 @@
-[2025-05-26 20:41:32,710] [INFO] Diretório de dados criado: data
-[2025-05-26 20:41:32,710] [INFO] Arquivo de contatos criado: data\contatos.json
-[2025-05-26 20:41:32,714] [INFO] Arquivo de categorias criado: data\categorias.json
-[2025-05-26 20:42:13,283] [INFO] Criando nova categoria: Categoria Teste
-[2025-05-26 20:42:13,284] [INFO] Categoria criada: Categoria Teste (ID: 1)
-[2025-05-26 20:42:13,288] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,301] [INFO] Criando nova categoria: Trabalho Novo
-[2025-05-26 20:42:13,302] [INFO] Categoria criada: Trabalho Novo (ID: 2)
-[2025-05-26 20:42:13,307] [INFO] Criando novo contato: Pedro Teste
-[2025-05-26 20:42:13,309] [INFO] Contato criado: Pedro Teste (ID: 1)
-[2025-05-26 20:42:13,310] [INFO] Listando todos os contatos
-[2025-05-26 20:42:13,319] [INFO] Criando novo contato: TestBusca12345
-[2025-05-26 20:42:13,319] [INFO] Contato criado: TestBusca12345 (ID: 2)
-[2025-05-26 20:42:13,324] [INFO] Buscando contatos por nome: TestBusca12345
-[2025-05-26 20:42:13,336] [INFO] Criando novo contato: Ana Nova
-[2025-05-26 20:42:13,336] [INFO] Contato criado: Ana Nova (ID: 3)
-[2025-05-26 20:42:13,343] [INFO] Página inicial acessada
-[2025-05-26 20:42:13,392] [WARNING] Página não encontrada: /pagina-inexistente
-[2025-05-26 20:42:13,411] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:42:13,412] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,477] [INFO] Criando nova categoria: Trabalho Web
-[2025-05-26 20:42:13,479] [INFO] Categoria criada: Trabalho Web (ID: 3)
-[2025-05-26 20:42:13,483] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:42:13,483] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,501] [INFO] Criando nova categoria: Teste Fluxo
-[2025-05-26 20:42:13,503] [INFO] Categoria criada: Teste Fluxo (ID: 4)
-[2025-05-26 20:42:13,504] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:42:13,504] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,515] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:42:13,516] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,519] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:42:13,520] [INFO] Listando todos os contatos
-[2025-05-26 20:42:13,528] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,549] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,582] [INFO] Criando nova categoria: Teste Web
-[2025-05-26 20:42:13,582] [INFO] Categoria criada: Teste Web (ID: 5)
-[2025-05-26 20:42:13,587] [INFO] Criando novo contato: Ana Silva
-[2025-05-26 20:42:13,589] [INFO] Contato criado: Ana Silva (ID: 4)
-[2025-05-26 20:42:13,589] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:42:13,591] [INFO] Listando todos os contatos
-[2025-05-26 20:42:13,594] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,613] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,617] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,620] [INFO] Criando nova categoria: Teste Web
-[2025-05-26 20:42:13,622] [INFO] Categoria criada: Teste Web (ID: 6)
-[2025-05-26 20:42:13,624] [INFO] Criando novo contato: Teste Filtro Único
-[2025-05-26 20:42:13,625] [INFO] Contato criado: Teste Filtro Único (ID: 5)
-[2025-05-26 20:42:13,627] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:42:13,628] [INFO] Listando todos os contatos
-[2025-05-26 20:42:13,636] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,649] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:42:13,649] [INFO] Buscando contatos por nome: Teste
-[2025-05-26 20:42:13,650] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,653] [INFO] Página inicial acessada
-[2025-05-26 20:42:13,653] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:42:13,653] [INFO] Listando todos os contatos
-[2025-05-26 20:42:13,653] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,657] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:42:13,658] [INFO] Listando todas as categorias
-[2025-05-26 20:42:13,659] [INFO] Listando todas as categorias
-[2025-05-26 20:43:08,155] [INFO] Criando nova categoria: Categoria Teste
-[2025-05-26 20:43:08,156] [INFO] Categoria criada: Categoria Teste (ID: 7)
-[2025-05-26 20:43:08,158] [INFO] Listando todas as categorias
-[2025-05-26 20:43:08,178] [INFO] Criando nova categoria: Trabalho Novo
-[2025-05-26 20:43:08,179] [INFO] Categoria criada: Trabalho Novo (ID: 8)
-[2025-05-26 20:43:08,182] [INFO] Criando novo contato: Pedro Teste
-[2025-05-26 20:43:08,185] [INFO] Contato criado: Pedro Teste (ID: 6)
-[2025-05-26 20:43:08,185] [INFO] Listando todos os contatos
-[2025-05-26 20:43:08,200] [INFO] Criando novo contato: TestBusca12345
-[2025-05-26 20:43:08,201] [INFO] Contato criado: TestBusca12345 (ID: 7)
-[2025-05-26 20:43:08,202] [INFO] Buscando contatos por nome: TestBusca12345
-[2025-05-26 20:43:08,218] [INFO] Criando novo contato: Ana Nova
-[2025-05-26 20:43:08,220] [INFO] Contato criado: Ana Nova (ID: 8)
-[2025-05-26 20:43:08,225] [INFO] Página inicial acessada
-[2025-05-26 20:43:08,241] [WARNING] Página não encontrada: /pagina-inexistente
-[2025-05-26 20:43:08,248] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:43:08,248] [INFO] Listando todas as categorias
-[2025-05-26 20:43:08,276] [INFO] Criando nova categoria: Trabalho Web
-[2025-05-26 20:43:08,276] [INFO] Categoria criada: Trabalho Web (ID: 9)
-[2025-05-26 20:43:08,281] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:43:08,281] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,374] [INFO] Criando nova categoria: Teste Fluxo
-[2025-05-26 20:43:12,377] [INFO] Categoria criada: Teste Fluxo (ID: 10)
-[2025-05-26 20:43:12,379] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:43:12,380] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,409] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:43:12,409] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,417] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:43:12,418] [INFO] Listando todos os contatos
-[2025-05-26 20:43:12,433] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,450] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,466] [INFO] Criando nova categoria: Teste Web
-[2025-05-26 20:43:12,469] [INFO] Categoria criada: Teste Web (ID: 11)
-[2025-05-26 20:43:12,474] [INFO] Criando novo contato: Ana Silva
-[2025-05-26 20:43:12,477] [INFO] Contato criado: Ana Silva (ID: 9)
-[2025-05-26 20:43:12,481] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:43:12,481] [INFO] Listando todos os contatos
-[2025-05-26 20:43:12,501] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,524] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,530] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,537] [INFO] Criando nova categoria: Teste Web
-[2025-05-26 20:43:12,540] [INFO] Categoria criada: Teste Web (ID: 12)
-[2025-05-26 20:43:12,543] [INFO] Criando novo contato: Teste Filtro Único
-[2025-05-26 20:43:12,544] [INFO] Contato criado: Teste Filtro Único (ID: 10)
-[2025-05-26 20:43:12,546] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:43:12,546] [INFO] Listando todos os contatos
-[2025-05-26 20:43:12,563] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,599] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:43:12,600] [INFO] Buscando contatos por nome: Teste
-[2025-05-26 20:43:12,601] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,611] [INFO] Página inicial acessada
-[2025-05-26 20:43:12,613] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:43:12,615] [INFO] Listando todos os contatos
-[2025-05-26 20:43:12,617] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,621] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:43:12,622] [INFO] Listando todas as categorias
-[2025-05-26 20:43:12,626] [INFO] Listando todas as categorias
-[2025-05-26 20:44:49,694] [WARNING] Página não encontrada: /favicon.ico
-[2025-05-26 20:44:49,915] [INFO] Listando todas as categorias
-[2025-05-26 20:44:50,130] [INFO] Página inicial acessada
-[2025-05-26 20:44:50,689] [INFO] Página inicial acessada
-[2025-05-26 20:44:50,788] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:44:50,789] [INFO] Listando todos os contatos
-[2025-05-26 20:44:50,790] [INFO] Listando todas as categorias
-[2025-05-26 20:44:50,914] [INFO] Página inicial acessada
-[2025-05-26 20:44:51,021] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:44:51,022] [INFO] Listando todas as categorias
-[2025-05-26 20:44:51,137] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:44:51,138] [INFO] Listando todos os contatos
-[2025-05-26 20:44:51,138] [INFO] Listando todas as categorias
-[2025-05-26 20:44:51,628] [INFO] Criando nova categoria: Teste Feedback 3091
-[2025-05-26 20:44:51,630] [INFO] Categoria criada: Teste Feedback 3091 (ID: 13)
-[2025-05-26 20:44:51,637] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:44:51,639] [INFO] Listando todas as categorias
-[2025-05-26 20:45:09,862] [INFO] Criando nova categoria: Categoria Teste
-[2025-05-26 20:45:09,865] [INFO] Categoria criada: Categoria Teste (ID: 14)
-[2025-05-26 20:45:09,866] [INFO] Listando todas as categorias
-[2025-05-26 20:45:09,887] [INFO] Criando nova categoria: Trabalho Novo
-[2025-05-26 20:45:09,890] [INFO] Categoria criada: Trabalho Novo (ID: 15)
-[2025-05-26 20:45:09,892] [INFO] Criando novo contato: Pedro Teste
-[2025-05-26 20:45:09,895] [INFO] Contato criado: Pedro Teste (ID: 11)
-[2025-05-26 20:45:09,895] [INFO] Listando todos os contatos
-[2025-05-26 20:45:09,911] [INFO] Criando novo contato: TestBusca12345
-[2025-05-26 20:45:09,912] [INFO] Contato criado: TestBusca12345 (ID: 12)
-[2025-05-26 20:45:09,913] [INFO] Buscando contatos por nome: TestBusca12345
-[2025-05-26 20:45:09,925] [INFO] Criando novo contato: Ana Nova
-[2025-05-26 20:45:09,925] [INFO] Contato criado: Ana Nova (ID: 13)
-[2025-05-26 20:45:09,932] [INFO] Página inicial acessada
-[2025-05-26 20:45:09,937] [WARNING] Página não encontrada: /pagina-inexistente
-[2025-05-26 20:45:09,942] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:45:09,942] [INFO] Listando todas as categorias
-[2025-05-26 20:45:09,960] [INFO] Criando nova categoria: Trabalho Web
-[2025-05-26 20:45:09,960] [INFO] Categoria criada: Trabalho Web (ID: 16)
-[2025-05-26 20:45:09,960] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:45:09,960] [INFO] Listando todas as categorias
-[2025-05-26 20:45:09,983] [INFO] Criando nova categoria: Teste Fluxo
-[2025-05-26 20:45:09,984] [INFO] Categoria criada: Teste Fluxo (ID: 17)
-[2025-05-26 20:45:09,985] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:45:09,985] [INFO] Listando todas as categorias
-[2025-05-26 20:45:09,993] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:45:09,993] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,002] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:45:10,002] [INFO] Listando todos os contatos
-[2025-05-26 20:45:10,011] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,021] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,024] [INFO] Criando nova categoria: Teste Web
-[2025-05-26 20:45:10,025] [INFO] Categoria criada: Teste Web (ID: 18)
-[2025-05-26 20:45:10,028] [INFO] Criando novo contato: Ana Silva
-[2025-05-26 20:45:10,029] [INFO] Contato criado: Ana Silva (ID: 14)
-[2025-05-26 20:45:10,030] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:45:10,030] [INFO] Listando todos os contatos
-[2025-05-26 20:45:10,055] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,092] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,097] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,101] [INFO] Criando nova categoria: Teste Web
-[2025-05-26 20:45:10,103] [INFO] Categoria criada: Teste Web (ID: 19)
-[2025-05-26 20:45:10,105] [INFO] Criando novo contato: Teste Filtro Único
-[2025-05-26 20:45:10,106] [INFO] Contato criado: Teste Filtro Único (ID: 15)
-[2025-05-26 20:45:10,107] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:45:10,109] [INFO] Listando todos os contatos
-[2025-05-26 20:45:10,118] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,130] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:45:10,130] [INFO] Buscando contatos por nome: Teste
-[2025-05-26 20:45:10,131] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,136] [INFO] Página inicial acessada
-[2025-05-26 20:45:10,138] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:45:10,139] [INFO] Listando todos os contatos
-[2025-05-26 20:45:10,139] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,141] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:45:10,142] [INFO] Listando todas as categorias
-[2025-05-26 20:45:10,142] [INFO] Listando todas as categorias
-[2025-05-26 20:55:04,134] [WARNING] Página não encontrada: /favicon.ico
-[2025-05-26 20:55:04,398] [INFO] Listando todas as categorias
-[2025-05-26 20:55:04,815] [INFO] Página inicial acessada
-[2025-05-26 20:55:05,390] [INFO] Página inicial acessada
-[2025-05-26 20:55:05,526] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:55:05,527] [INFO] Listando todos os contatos
-[2025-05-26 20:55:05,545] [INFO] Listando todas as categorias
-[2025-05-26 20:55:05,748] [INFO] Página inicial acessada
-[2025-05-26 20:55:05,898] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:55:05,900] [INFO] Listando todas as categorias
-[2025-05-26 20:55:06,071] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:55:06,072] [INFO] Listando todos os contatos
-[2025-05-26 20:55:06,073] [INFO] Listando todas as categorias
-[2025-05-26 20:55:06,360] [INFO] Criando nova categoria: Teste Feedback 3706
-[2025-05-26 20:55:06,362] [INFO] Categoria criada: Teste Feedback 3706 (ID: 20)
-[2025-05-26 20:55:06,369] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:55:06,371] [INFO] Listando todas as categorias
-[2025-05-26 20:55:24,890] [INFO] Criando nova categoria: Categoria Teste
-[2025-05-26 20:55:24,890] [INFO] Categoria criada: Categoria Teste (ID: 21)
-[2025-05-26 20:55:24,890] [INFO] Listando todas as categorias
-[2025-05-26 20:55:24,904] [INFO] Criando nova categoria: Trabalho Novo
-[2025-05-26 20:55:24,913] [INFO] Categoria criada: Trabalho Novo (ID: 22)
-[2025-05-26 20:55:24,919] [INFO] Criando novo contato: Pedro Teste
-[2025-05-26 20:55:24,921] [INFO] Contato criado: Pedro Teste (ID: 16)
-[2025-05-26 20:55:24,923] [INFO] Listando todos os contatos
-[2025-05-26 20:55:24,938] [INFO] Criando novo contato: TestBusca12345
-[2025-05-26 20:55:24,940] [INFO] Contato criado: TestBusca12345 (ID: 17)
-[2025-05-26 20:55:24,942] [INFO] Buscando contatos por nome: TestBusca12345
-[2025-05-26 20:55:24,956] [INFO] Criando novo contato: Ana Nova
-[2025-05-26 20:55:24,958] [INFO] Contato criado: Ana Nova (ID: 18)
-[2025-05-26 20:55:24,963] [INFO] Página inicial acessada
-[2025-05-26 20:55:24,970] [WARNING] Página não encontrada: /pagina-inexistente
-[2025-05-26 20:55:24,975] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:55:24,976] [INFO] Listando todas as categorias
-[2025-05-26 20:55:24,999] [INFO] Criando nova categoria: Trabalho Web
-[2025-05-26 20:55:25,001] [INFO] Categoria criada: Trabalho Web (ID: 23)
-[2025-05-26 20:55:25,004] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:55:25,004] [INFO] Listando todas as categorias
-[2025-05-26 20:55:25,037] [INFO] Criando nova categoria: Teste Fluxo
-[2025-05-26 20:55:25,039] [INFO] Categoria criada: Teste Fluxo (ID: 24)
-[2025-05-26 20:55:25,041] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:55:25,042] [INFO] Listando todas as categorias
-[2025-05-26 20:55:25,056] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:55:25,056] [INFO] Listando todas as categorias
-[2025-05-26 20:55:25,066] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:55:25,067] [INFO] Listando todos os contatos
-[2025-05-26 20:55:25,073] [INFO] Listando todas as categorias
-[2025-05-26 20:55:25,085] [INFO] Listando todas as categorias
-[2025-05-26 20:55:25,090] [INFO] Criando nova categoria: Teste Web
-[2025-05-26 20:55:25,092] [INFO] Categoria criada: Teste Web (ID: 25)
-[2025-05-26 20:55:25,094] [INFO] Criando novo contato: Ana Silva
-[2025-05-26 20:55:25,097] [INFO] Contato criado: Ana Silva (ID: 19)
-[2025-05-26 20:55:25,099] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:55:25,100] [INFO] Listando todos os contatos
-[2025-05-26 20:55:25,106] [INFO] Listando todas as categorias
-[2025-05-26 20:55:25,124] [INFO] Listando todas as categorias
-[2025-05-26 20:55:25,136] [INFO] Listando todas as categorias
-[2025-05-26 20:55:25,143] [INFO] Criando nova categoria: Teste Web
-[2025-05-26 20:55:25,143] [INFO] Categoria criada: Teste Web (ID: 26)
-[2025-05-26 20:55:25,148] [INFO] Criando novo contato: Teste Filtro Único
-[2025-05-26 20:55:25,150] [INFO] Contato criado: Teste Filtro Único (ID: 20)
-[2025-05-26 20:55:25,152] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:55:25,153] [INFO] Listando todos os contatos
-[2025-05-26 20:55:25,156] [INFO] Listando todas as categorias
-[2025-05-26 20:55:29,259] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:55:29,261] [INFO] Buscando contatos por nome: Teste
-[2025-05-26 20:55:29,263] [INFO] Listando todas as categorias
-[2025-05-26 20:55:29,278] [INFO] Página inicial acessada
-[2025-05-26 20:55:29,280] [INFO] Acessando página de listagem de contatos
-[2025-05-26 20:55:29,280] [INFO] Listando todos os contatos
-[2025-05-26 20:55:29,282] [INFO] Listando todas as categorias
-[2025-05-26 20:55:29,285] [INFO] Acessando página de listagem de categorias
-[2025-05-26 20:55:29,285] [INFO] Listando todas as categorias
-[2025-05-26 20:55:29,293] [INFO] Listando todas as categorias
+[2025-05-25 16:43:43,441] [INFO] Arquivo de contatos criado: data\contatos.json
+[2025-05-25 16:43:43,442] [INFO] Arquivo de categorias criado: data\categorias.json
+[2025-05-25 16:43:50,598] [INFO] Página inicial acessada
+[2025-05-25 16:43:50,692] [WARNING] Página não encontrada: /favicon.ico
+[2025-05-25 16:43:50,750] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:43:50,750] [INFO] Listando todas as categorias
+[2025-05-25 16:43:50,943] [INFO] Criando nova categoria: Trabalho E2E 202227
+[2025-05-25 16:43:50,944] [INFO] Categoria criada: Trabalho E2E 202227 (ID: 1)
+[2025-05-25 16:43:50,946] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:43:50,947] [INFO] Listando todas as categorias
+[2025-05-25 16:43:51,015] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:43:51,015] [INFO] Listando todos os contatos
+[2025-05-25 16:43:51,015] [INFO] Listando todas as categorias
+[2025-05-25 16:43:51,073] [INFO] Listando todas as categorias
+[2025-05-25 16:43:51,248] [INFO] Criando novo contato: João E2E Silva 202227
+[2025-05-25 16:43:51,249] [INFO] Contato criado: João E2E Silva 202227 (ID: 1)
+[2025-05-25 16:43:51,251] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:43:51,251] [INFO] Listando todos os contatos
+[2025-05-25 16:43:51,259] [INFO] Listando todas as categorias
+[2025-05-25 16:43:51,309] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:43:51,310] [INFO] Listando todos os contatos
+[2025-05-25 16:43:51,310] [INFO] Listando todas as categorias
+[2025-05-25 16:43:51,409] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:43:51,409] [INFO] Buscando contatos por nome: João E2E 202227
+[2025-05-25 16:43:51,410] [INFO] Listando todas as categorias
+[2025-05-25 16:43:51,630] [INFO] Listando todas as categorias
+[2025-05-25 16:43:51,717] [INFO] Página inicial acessada
+[2025-05-25 16:43:52,148] [INFO] Página inicial acessada
+[2025-05-25 16:43:52,213] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:43:52,213] [INFO] Listando todos os contatos
+[2025-05-25 16:43:52,213] [INFO] Listando todas as categorias
+[2025-05-25 16:43:52,267] [INFO] Página inicial acessada
+[2025-05-25 16:43:52,315] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:43:52,315] [INFO] Listando todas as categorias
+[2025-05-25 16:43:52,363] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:43:52,363] [INFO] Listando todos os contatos
+[2025-05-25 16:43:52,363] [INFO] Listando todas as categorias
+[2025-05-25 16:43:52,474] [INFO] Criando nova categoria: Teste Feedback 2232
+[2025-05-25 16:43:52,475] [INFO] Categoria criada: Teste Feedback 2232 (ID: 2)
+[2025-05-25 16:43:52,478] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:43:52,478] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,615] [INFO] Criando nova categoria: Categoria Teste
+[2025-05-25 16:44:10,615] [INFO] Categoria criada: Categoria Teste (ID: 3)
+[2025-05-25 16:44:10,616] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,625] [INFO] Criando nova categoria: Trabalho Novo
+[2025-05-25 16:44:10,626] [INFO] Categoria criada: Trabalho Novo (ID: 4)
+[2025-05-25 16:44:10,629] [INFO] Criando novo contato: Pedro Teste
+[2025-05-25 16:44:10,629] [INFO] Contato criado: Pedro Teste (ID: 2)
+[2025-05-25 16:44:10,630] [INFO] Listando todos os contatos
+[2025-05-25 16:44:10,640] [INFO] Criando novo contato: TestBusca12345
+[2025-05-25 16:44:10,640] [INFO] Contato criado: TestBusca12345 (ID: 3)
+[2025-05-25 16:44:10,641] [INFO] Buscando contatos por nome: TestBusca12345
+[2025-05-25 16:44:10,650] [INFO] Criando novo contato: Ana Nova
+[2025-05-25 16:44:10,651] [INFO] Contato criado: Ana Nova (ID: 4)
+[2025-05-25 16:44:10,653] [INFO] Página inicial acessada
+[2025-05-25 16:44:10,655] [WARNING] Página não encontrada: /pagina-inexistente
+[2025-05-25 16:44:10,658] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:44:10,658] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,670] [INFO] Criando nova categoria: Trabalho Web
+[2025-05-25 16:44:10,671] [INFO] Categoria criada: Trabalho Web (ID: 5)
+[2025-05-25 16:44:10,672] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:44:10,672] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,685] [INFO] Criando nova categoria: Teste Fluxo
+[2025-05-25 16:44:10,685] [INFO] Categoria criada: Teste Fluxo (ID: 6)
+[2025-05-25 16:44:10,686] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:44:10,686] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,694] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:44:10,694] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,697] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:44:10,697] [INFO] Listando todos os contatos
+[2025-05-25 16:44:10,704] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,707] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,710] [INFO] Criando nova categoria: Teste Web
+[2025-05-25 16:44:10,710] [INFO] Categoria criada: Teste Web (ID: 7)
+[2025-05-25 16:44:10,711] [INFO] Criando novo contato: Ana Silva
+[2025-05-25 16:44:10,712] [INFO] Contato criado: Ana Silva (ID: 5)
+[2025-05-25 16:44:10,713] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:44:10,713] [INFO] Listando todos os contatos
+[2025-05-25 16:44:10,720] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,729] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,733] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,735] [INFO] Criando nova categoria: Teste Web
+[2025-05-25 16:44:10,736] [INFO] Categoria criada: Teste Web (ID: 8)
+[2025-05-25 16:44:10,737] [INFO] Criando novo contato: Teste Filtro Único
+[2025-05-25 16:44:10,737] [INFO] Contato criado: Teste Filtro Único (ID: 6)
+[2025-05-25 16:44:10,738] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:44:10,738] [INFO] Listando todos os contatos
+[2025-05-25 16:44:10,746] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,753] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:44:10,754] [INFO] Buscando contatos por nome: Teste
+[2025-05-25 16:44:10,754] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,757] [INFO] Página inicial acessada
+[2025-05-25 16:44:10,757] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:44:10,757] [INFO] Listando todos os contatos
+[2025-05-25 16:44:10,758] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,758] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:44:10,759] [INFO] Listando todas as categorias
+[2025-05-25 16:44:10,759] [INFO] Listando todas as categorias
+[2025-05-25 16:45:24,920] [INFO] Página inicial acessada
+[2025-05-25 16:45:25,015] [WARNING] Página não encontrada: /favicon.ico
+[2025-05-25 16:45:25,073] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:45:25,073] [INFO] Listando todas as categorias
+[2025-05-25 16:45:25,287] [INFO] Criando nova categoria: Trabalho E2E 202322
+[2025-05-25 16:45:25,288] [INFO] Categoria criada: Trabalho E2E 202322 (ID: 9)
+[2025-05-25 16:45:25,291] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:45:25,291] [INFO] Listando todas as categorias
+[2025-05-25 16:45:25,370] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:45:25,370] [INFO] Listando todos os contatos
+[2025-05-25 16:45:25,371] [INFO] Listando todas as categorias
+[2025-05-25 16:45:25,435] [INFO] Listando todas as categorias
+[2025-05-25 16:45:25,606] [INFO] Criando novo contato: João E2E Silva 202322
+[2025-05-25 16:45:25,607] [INFO] Contato criado: João E2E Silva 202322 (ID: 7)
+[2025-05-25 16:45:25,609] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:45:25,609] [INFO] Listando todos os contatos
+[2025-05-25 16:45:25,617] [INFO] Listando todas as categorias
+[2025-05-25 16:45:25,666] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:45:25,666] [INFO] Listando todos os contatos
+[2025-05-25 16:45:25,667] [INFO] Listando todas as categorias
+[2025-05-25 16:45:25,755] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:45:25,755] [INFO] Buscando contatos por nome: João E2E 202322
+[2025-05-25 16:45:25,755] [INFO] Listando todas as categorias
+[2025-05-25 16:46:09,101] [WARNING] Página não encontrada: /favicon.ico
+[2025-05-25 16:46:09,158] [INFO] Listando todas as categorias
+[2025-05-25 16:46:09,271] [INFO] Página inicial acessada
+[2025-05-25 16:46:09,713] [INFO] Página inicial acessada
+[2025-05-25 16:46:09,763] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:46:09,763] [INFO] Listando todos os contatos
+[2025-05-25 16:46:09,763] [INFO] Listando todas as categorias
+[2025-05-25 16:46:09,829] [INFO] Página inicial acessada
+[2025-05-25 16:46:09,883] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:46:09,883] [INFO] Listando todas as categorias
+[2025-05-25 16:46:09,942] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:46:09,943] [INFO] Listando todos os contatos
+[2025-05-25 16:46:09,943] [INFO] Listando todas as categorias
+[2025-05-25 16:46:10,052] [INFO] Criando nova categoria: Teste Feedback 2369
+[2025-05-25 16:46:10,053] [INFO] Categoria criada: Teste Feedback 2369 (ID: 10)
+[2025-05-25 16:46:10,055] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:46:10,055] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,218] [INFO] Criando nova categoria: Categoria Teste
+[2025-05-25 16:46:28,219] [INFO] Categoria criada: Categoria Teste (ID: 11)
+[2025-05-25 16:46:28,219] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,231] [INFO] Criando nova categoria: Trabalho Novo
+[2025-05-25 16:46:28,232] [INFO] Categoria criada: Trabalho Novo (ID: 12)
+[2025-05-25 16:46:28,234] [INFO] Criando novo contato: Pedro Teste
+[2025-05-25 16:46:28,235] [INFO] Contato criado: Pedro Teste (ID: 8)
+[2025-05-25 16:46:28,235] [INFO] Listando todos os contatos
+[2025-05-25 16:46:28,246] [INFO] Criando novo contato: TestBusca12345
+[2025-05-25 16:46:28,247] [INFO] Contato criado: TestBusca12345 (ID: 9)
+[2025-05-25 16:46:28,247] [INFO] Buscando contatos por nome: TestBusca12345
+[2025-05-25 16:46:28,256] [INFO] Criando novo contato: Ana Nova
+[2025-05-25 16:46:28,257] [INFO] Contato criado: Ana Nova (ID: 10)
+[2025-05-25 16:46:28,259] [INFO] Página inicial acessada
+[2025-05-25 16:46:28,261] [WARNING] Página não encontrada: /pagina-inexistente
+[2025-05-25 16:46:28,264] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:46:28,264] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,277] [INFO] Criando nova categoria: Trabalho Web
+[2025-05-25 16:46:28,277] [INFO] Categoria criada: Trabalho Web (ID: 13)
+[2025-05-25 16:46:28,278] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:46:28,279] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,291] [INFO] Criando nova categoria: Teste Fluxo
+[2025-05-25 16:46:28,292] [INFO] Categoria criada: Teste Fluxo (ID: 14)
+[2025-05-25 16:46:28,293] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:46:28,293] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,301] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:46:28,301] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,304] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:46:28,305] [INFO] Listando todos os contatos
+[2025-05-25 16:46:28,311] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,315] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,317] [INFO] Criando nova categoria: Teste Web
+[2025-05-25 16:46:28,318] [INFO] Categoria criada: Teste Web (ID: 15)
+[2025-05-25 16:46:28,318] [INFO] Criando novo contato: Ana Silva
+[2025-05-25 16:46:28,319] [INFO] Contato criado: Ana Silva (ID: 11)
+[2025-05-25 16:46:28,320] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:46:28,320] [INFO] Listando todos os contatos
+[2025-05-25 16:46:28,327] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,336] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,339] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,341] [INFO] Criando nova categoria: Teste Web
+[2025-05-25 16:46:28,342] [INFO] Categoria criada: Teste Web (ID: 16)
+[2025-05-25 16:46:28,342] [INFO] Criando novo contato: Teste Filtro Único
+[2025-05-25 16:46:28,343] [INFO] Contato criado: Teste Filtro Único (ID: 12)
+[2025-05-25 16:46:28,344] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:46:28,344] [INFO] Listando todos os contatos
+[2025-05-25 16:46:28,351] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,358] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:46:28,358] [INFO] Buscando contatos por nome: Teste
+[2025-05-25 16:46:28,359] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,361] [INFO] Página inicial acessada
+[2025-05-25 16:46:28,362] [INFO] Acessando página de listagem de contatos
+[2025-05-25 16:46:28,362] [INFO] Listando todos os contatos
+[2025-05-25 16:46:28,362] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,363] [INFO] Acessando página de listagem de categorias
+[2025-05-25 16:46:28,364] [INFO] Listando todas as categorias
+[2025-05-25 16:46:28,365] [INFO] Listando todas as categorias
+[2025-06-16 16:48:59,300] [INFO] Aplicação Agenda de Contatos iniciada
+[2025-06-16 16:49:03,552] [INFO] Página inicial acessada
+[2025-06-16 16:49:04,547] [WARNING] Página não encontrada: /favicon.ico
+[2025-06-16 16:49:05,863] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:05,863] [INFO] Listando todos os contatos
+[2025-06-16 16:49:05,878] [INFO] Listando todas as categorias
+[2025-06-16 16:49:08,882] [INFO] Excluindo contato: ID 1
+[2025-06-16 16:49:08,884] [INFO] Contato excluído: ID 1
+[2025-06-16 16:49:08,895] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:08,895] [INFO] Listando todos os contatos
+[2025-06-16 16:49:08,909] [INFO] Listando todas as categorias
+[2025-06-16 16:49:22,965] [INFO] Aplicação Agenda de Contatos iniciada em produção
+[2025-06-16 16:49:34,884] [WARNING] Página não encontrada: /favicon.ico
+[2025-06-16 16:49:35,187] [INFO] Listando todas as categorias
+[2025-06-16 16:49:35,475] [INFO] Página inicial acessada
+[2025-06-16 16:49:35,984] [INFO] Página inicial acessada
+[2025-06-16 16:49:36,084] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:36,085] [INFO] Listando todos os contatos
+[2025-06-16 16:49:36,085] [INFO] Listando todas as categorias
+[2025-06-16 16:49:36,210] [INFO] Página inicial acessada
+[2025-06-16 16:49:36,321] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:49:36,321] [INFO] Listando todas as categorias
+[2025-06-16 16:49:36,468] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:36,468] [INFO] Listando todos os contatos
+[2025-06-16 16:49:36,469] [INFO] Listando todas as categorias
+[2025-06-16 16:49:36,699] [INFO] Criando nova categoria: Teste Feedback 3376
+[2025-06-16 16:49:36,701] [INFO] Categoria criada: Teste Feedback 3376 (ID: 17)
+[2025-06-16 16:49:36,727] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:49:36,729] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,084] [INFO] Criando nova categoria: Categoria Teste
+[2025-06-16 16:49:55,086] [INFO] Categoria criada: Categoria Teste (ID: 18)
+[2025-06-16 16:49:55,088] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,103] [INFO] Criando nova categoria: Trabalho Novo
+[2025-06-16 16:49:55,103] [INFO] Categoria criada: Trabalho Novo (ID: 19)
+[2025-06-16 16:49:55,103] [INFO] Criando novo contato: Pedro Teste
+[2025-06-16 16:49:55,103] [INFO] Contato criado: Pedro Teste (ID: 13)
+[2025-06-16 16:49:55,103] [INFO] Listando todos os contatos
+[2025-06-16 16:49:55,122] [INFO] Criando novo contato: TestBusca12345
+[2025-06-16 16:49:55,122] [INFO] Contato criado: TestBusca12345 (ID: 14)
+[2025-06-16 16:49:55,122] [INFO] Buscando contatos por nome: TestBusca12345
+[2025-06-16 16:49:55,142] [INFO] Criando novo contato: Ana Nova
+[2025-06-16 16:49:55,142] [INFO] Contato criado: Ana Nova (ID: 15)
+[2025-06-16 16:49:55,147] [INFO] Página inicial acessada
+[2025-06-16 16:49:55,151] [WARNING] Página não encontrada: /pagina-inexistente
+[2025-06-16 16:49:55,153] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:49:55,153] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,174] [INFO] Criando nova categoria: Trabalho Web
+[2025-06-16 16:49:55,175] [INFO] Categoria criada: Trabalho Web (ID: 20)
+[2025-06-16 16:49:55,176] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:49:55,177] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,196] [INFO] Criando nova categoria: Teste Fluxo
+[2025-06-16 16:49:55,197] [INFO] Categoria criada: Teste Fluxo (ID: 21)
+[2025-06-16 16:49:55,198] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:49:55,198] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,210] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:49:55,210] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,214] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:55,214] [INFO] Listando todos os contatos
+[2025-06-16 16:49:55,227] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,230] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,231] [INFO] Criando nova categoria: Teste Web
+[2025-06-16 16:49:55,231] [INFO] Categoria criada: Teste Web (ID: 22)
+[2025-06-16 16:49:55,236] [INFO] Criando novo contato: Ana Silva
+[2025-06-16 16:49:55,238] [INFO] Contato criado: Ana Silva (ID: 16)
+[2025-06-16 16:49:55,240] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:55,241] [INFO] Listando todos os contatos
+[2025-06-16 16:49:55,248] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,262] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,269] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,275] [INFO] Criando nova categoria: Teste Web
+[2025-06-16 16:49:55,277] [INFO] Categoria criada: Teste Web (ID: 23)
+[2025-06-16 16:49:55,278] [INFO] Criando novo contato: Teste Filtro Único
+[2025-06-16 16:49:55,279] [INFO] Contato criado: Teste Filtro Único (ID: 17)
+[2025-06-16 16:49:55,280] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:55,280] [INFO] Listando todos os contatos
+[2025-06-16 16:49:55,291] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,295] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:55,295] [INFO] Buscando contatos por nome: Teste
+[2025-06-16 16:49:55,295] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,307] [INFO] Página inicial acessada
+[2025-06-16 16:49:55,308] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:49:55,308] [INFO] Listando todos os contatos
+[2025-06-16 16:49:55,308] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,311] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:49:55,311] [INFO] Listando todas as categorias
+[2025-06-16 16:49:55,311] [INFO] Listando todas as categorias
+[2025-06-16 16:50:25,174] [INFO] Aplicação Agenda de Contatos iniciada em produção
+[2025-06-16 16:50:30,115] [WARNING] Página não encontrada: /favicon.ico
+[2025-06-16 16:50:30,269] [INFO] Listando todas as categorias
+[2025-06-16 16:50:30,612] [INFO] Página inicial acessada
+[2025-06-16 16:50:31,148] [INFO] Página inicial acessada
+[2025-06-16 16:50:31,300] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:50:31,302] [INFO] Listando todos os contatos
+[2025-06-16 16:50:31,304] [INFO] Listando todas as categorias
+[2025-06-16 16:50:31,482] [INFO] Página inicial acessada
+[2025-06-16 16:50:31,615] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:50:31,616] [INFO] Listando todas as categorias
+[2025-06-16 16:50:31,791] [INFO] Acessando página de listagem de contatos
+[2025-06-16 16:50:31,791] [INFO] Listando todos os contatos
+[2025-06-16 16:50:31,792] [INFO] Listando todas as categorias
+[2025-06-16 16:50:32,167] [INFO] Criando nova categoria: Teste Feedback 3431
+[2025-06-16 16:50:32,169] [INFO] Categoria criada: Teste Feedback 3431 (ID: 24)
+[2025-06-16 16:50:32,175] [INFO] Acessando página de listagem de categorias
+[2025-06-16 16:50:32,179] [INFO] Listando todas as categorias
