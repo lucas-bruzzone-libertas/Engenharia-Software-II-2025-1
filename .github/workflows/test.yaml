@@ -1,17 +1,17 @@
-name: Tests
+name: Deploy to Render
 
 on:
-  pull_request:
-    branches: [ main, develop ]
   push:
+    branches: [ main ]
+  pull_request:
     branches: [ main ]
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v3
     
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -21,14 +21,15 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pytest pytest-cov
         pip install -r requirements.txt
     
-    - name: Run tests with coverage (skip E2E in CI)
+    - name: Run tests
       run: |
-        pytest --cov --cov-branch --cov-report=xml --cov-report=html -k "not e2e"
+        python -m pytest tests/ -v
     
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v5
+    - name: Deploy to Render
+      if: github.ref == 'refs/heads/main'
+      uses: johnbeynon/render-deploy-action@v0.0.8
       with:
-        token: ${{ secrets.CODECOV_TOKEN }}
+        service-id: ${{ secrets.RENDER_SERVICE_ID }}
+        api-key: ${{ secrets.RENDER_API_KEY }}
