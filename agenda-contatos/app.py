@@ -5,7 +5,7 @@ from logger_singleton import Logger
 import os
 
 app = Flask(__name__)
-app.secret_key = os.urandom(24)  # Para flash messages
+app.secret_key = os.environ.get('SECRET_KEY', os.urandom(24))
 
 # Registra os blueprints
 app.register_blueprint(contato_bp)
@@ -33,5 +33,10 @@ if __name__ == '__main__':
     # Log de inicialização
     logger.info("Aplicação Agenda de Contatos iniciada")
     
-    # Inicie o aplicativo Flask
-    app.run(debug=True)
+    # Para produção no Render
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
+else:
+    # Para produção
+    os.makedirs('data', exist_ok=True)
+    logger.info("Aplicação Agenda de Contatos iniciada em produção")

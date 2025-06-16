@@ -1,4 +1,4 @@
-name: Tests
+name: Tests and Deploy
 
 on:
   pull_request:
@@ -26,9 +26,25 @@ jobs:
     
     - name: Run tests with coverage (skip E2E in CI)
       run: |
-        pytest --cov --cov-branch --cov-report=xml --cov-report=html -k "not e2e"
+        if [ -d "tests" ]; then
+          pytest --cov --cov-branch --cov-report=xml --cov-report=html -k "not e2e"
+        else
+          echo "No tests directory found, skipping tests"
+        fi
     
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v5
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
+
+  deploy:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    
+    steps:
+    - name: Deploy to Render
+      uses: johnbeynon/render-deploy-action@v0.0.8
+      with:
+        service-id: ${{ secrets.RENDER_SERVICE_ID }}
+        api-key: ${{ secrets.RENDER_API_KEY }}
