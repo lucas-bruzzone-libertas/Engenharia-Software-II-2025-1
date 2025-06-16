@@ -45,9 +45,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Filtros de pesquisa dinâmicos (opcional)
+    // Filtros de pesquisa dinâmicos - APENAS para páginas de listagem
     const nameSearchInput = document.querySelector('input[name="nome"]');
-    if (nameSearchInput) {
+    // Verifica se estamos em uma página de listagem (URL contém apenas /contatos/ ou /categorias/)
+    const isListingPage = window.location.pathname.match(/\/(contatos|categorias)\/?$/);
+    
+    if (nameSearchInput && isListingPage) {
         nameSearchInput.addEventListener('keyup', function(e) {
             if (e.key === 'Enter') {
                 e.target.form.submit();
@@ -55,8 +58,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Auto-submit do filtro de categoria - APENAS para páginas de listagem
     const categorySelect = document.querySelector('select[name="categoria_id"]');
-    if (categorySelect) {
+    if (categorySelect && isListingPage) {
         categorySelect.addEventListener('change', function() {
             this.form.submit();
         });
