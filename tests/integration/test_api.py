@@ -55,6 +55,17 @@ class TestCategoriaAPI:
             assert response.json['nome'] == 'Trabalho E2E 202227'
             assert 'id' in response.json
 
+    def test_buscar_categoria_por_id_n_existe(self):
+        """Testa criação bem-sucedida de categoria"""
+        temp_dir = tempfile.mkdtemp()
+        app.config['TESTING'] = True
+        app.config['DATA_PATH'] = temp_dir
+        with app.test_client() as client:
+            response = client.get('/categorias/api/888888888888')
+            
+            assert response.status_code == 404
+            assert 'error' in response.json
+
 @pytest.mark.integration
 class TestContatoAPI:
     """Testes de integração para API de contatos"""
