@@ -43,6 +43,18 @@ class TestCategoriaAPI:
         
         shutil.rmtree(temp_dir, ignore_errors=True)
 
+    def test_buscar_categoria_por_id(self):
+        """Testa criação bem-sucedida de categoria"""
+        temp_dir = tempfile.mkdtemp()
+        app.config['TESTING'] = True
+        app.config['DATA_PATH'] = temp_dir
+        with app.test_client() as client:
+            response = client.get('/categorias/api/1')
+            
+            assert response.status_code == 200
+            assert response.json['nome'] == 'Trabalho E2E 202227'
+            assert 'id' in response.json
+
 @pytest.mark.integration
 class TestContatoAPI:
     """Testes de integração para API de contatos"""
@@ -103,3 +115,5 @@ class TestContatoAPI:
             assert 'id' in response.json
         
         shutil.rmtree(temp_dir, ignore_errors=True)
+
+
